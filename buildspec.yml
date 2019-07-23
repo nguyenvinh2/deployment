@@ -4,4 +4,4 @@ phases:
   build:
     commands:
       - dotnet build
-      - dotnet publish -o site
+      - dotnet publish --configuration Release --framework netcoreapp2.1
