@@ -36,7 +36,7 @@ namespace deployment
             services.AddMvc(config =>
             {
                 config.ModelBinderProviders.Insert(0, new Piranha.Manager.Binders.AbstractModelBinderProvider());
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddPiranha();
             services.AddPiranhaApplication();
