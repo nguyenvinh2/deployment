@@ -35,6 +35,8 @@
   - Compress the "site" directory with the json file into a zip file
   - On Elastic Beanstalk, create a new application with a IIS/.NET environment and upload your zip file for deployment
 
-- However, it still won't deploy because SQL Lite cannot open the .db file embedded within the application, causing the application to crash.
+- However, it still won't deploy because SQLite cannot open the .db file embedded within the application, causing the application to crash.
 
-- And that's where we're at.
+- Further troubleshooting reveals that EB instances are meant to be immuteable; it's files cannot be modify. Because the SQLite database is located in that .db file, which is generated within the application, this application is incompatible with EB with the current set up.
+
+- Possible follow up is to switch to MS SQL Server it's database.
