@@ -15,7 +15,7 @@
     <None Include="web.config" CopyToPublishDirectory="Always" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.8" />
-    <PackageReference Include="Piranha" Version="6.1.0" />
+    <PackageReference Include="Piranha" Version="10.0.0" />
     <PackageReference Include="Piranha.AspNetCore" Version="6.1.0" />
     <PackageReference Include="Piranha.AspNetCore.Identity.SQLite" Version="6.1.0" />
     <PackageReference Include="Piranha.AttributeBuilder" Version="6.1.0" />
